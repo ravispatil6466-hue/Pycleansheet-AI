@@ -1,0 +1,12 @@
+streamlit>=1.36.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.22.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scikit-learn>=1.5.0
+missingno>=0.5.2
+openpyxl>=3.1.0
+anthropic>=0.34.0
+openai>=1.35.0
+XlsxWriter>=3.2.0
