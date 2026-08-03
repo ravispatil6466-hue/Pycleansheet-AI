@@ -1,0 +1,42 @@
+@import "react-grid-layout/css/styles.css";
+@import "react-resizable/css/styles.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-slate-100 text-slate-800 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.dark body { @apply bg-slate-900 text-slate-100; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.5); border-radius: 8px; }
+
+.ribbon-btn {
+  @apply flex flex-col items-center justify-center gap-1 px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-600 dark:text-slate-300 hover:bg-brand-50 dark:hover:bg-slate-700 transition-colors cursor-pointer select-none;
+}
+.ribbon-btn.active { @apply bg-brand-100 dark:bg-slate-700 text-brand-800 dark:text-brand-200; }
+
+.panel-card {
+  @apply bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-panel;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: #1E7A6F !important;
+  opacity: 0.15 !important;
+  border-radius: 10px;
+}
+
+.widget-card {
+  @apply h-full w-full panel-card flex flex-col overflow-hidden;
+}
+
+.widget-header {
+  @apply flex items-center justify-between px-3 py-1.5 border-b border-slate-100 dark:border-slate-700 text-xs font-semibold text-slate-500 dark:text-slate-400 cursor-move;
+}

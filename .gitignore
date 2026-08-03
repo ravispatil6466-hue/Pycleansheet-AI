@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Data
+backend/storage/datasets/*
+backend/storage/exports/*
+!backend/storage/datasets/.gitkeep
+!backend/storage/exports/.gitkeep
+backend/*.db
+
+# OS
+.DS_Store
